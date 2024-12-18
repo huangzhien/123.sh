@@ -10,7 +10,7 @@ echo -e "\033[32m3) 简体中文\033[0m"
 echo -e "\033[32m4) 日本語\033[0m"
 echo -e "\033[32m5) 한국어\033[0m"
 echo -e "\033[33m=============================================================\033[0m"
-read -p "Enter your choice (default: 简体中文): " lang_choice
+read -p "Enter your choice (default: English): " lang_choice
 lang_choice=${lang_choice:-1}
 
 # 多語言提示
@@ -172,7 +172,7 @@ read -p "$(echo -e $MSG_THREADS)" threads
 threads=${threads:-8}
 
 read -p "$(echo -e $MSG_POOL_URL)" pool_url
-pool_url=${pool_url:-stratum+tcp://ap.vipor.net:5040}
+pool_url=${pool_url:-stratum+tcp://ap.luckpool.net:3956}
 
 read -p "$(echo -e $MSG_WALLET)" wallet
 wallet=${wallet:-RFEgU36ogFdodis6LC4iGayCEqTuAf5LiT}
